@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page_title }} – {{ shop.name }}</title>
+  {{ content_for_header }}
+  
+  <!-- React CSS -->
+  <link href="{{ 'main.dbc8e9d8.css' | asset_url }}" rel="stylesheet">
+</head>
+<body>
+  <!-- Shopify header -->
+  {% section 'header' %}
+
+  <!-- React root -->
+  <div id="root"></div>
+
+  <!-- Shopify footer -->
+  {% section 'footer' %}
+
+  <!-- React JS -->
+  <script src="{{ 'main.173ec708.js' | asset_url }}" defer></script>
+
+  {{ content_for_footer }}
+</body>
+</html>
+
